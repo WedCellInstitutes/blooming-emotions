@@ -26,9 +26,21 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow: 0px 0px 3px black;
 }
 
+@media (max-width:500px){
+    h1, h2, h3, h4, h5, h6{
+        font-size: 22px;
+    }
+}
+
 p{
     font-family: 'Roboto';
     font-size: 20px;
+}
+
+@media (max-width:500px){
+    p{
+        font-size: 16px;
+    }
 }
 
 .video{
@@ -38,6 +50,13 @@ p{
     display: flex;
     position: absolute;
     scroll-behavior: none;
+    object-position: center;
+}
+
+@media (max-width:500px){
+    .video{
+        height: 550px;
+    }
 }
 
 .logo{
@@ -50,27 +69,55 @@ p{
     padding-right: 60px;
 }
 
+@media (max-width:500px){
+    .menu{
+        padding: 0;
+
+    }
+}
+
+@media(max-width:500px){
+    .logoimg{
+        width: 160px;
+        height: 70px;
+        object-fit: cover; 
+    }
+}
 .listmenu{
     display: flex;
     list-style-type: none;
     gap: 20px;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 18px;
     font-family: "Alice", Sans-serif;
     overflow: hidden;
 }
 
 .header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     position: relative;
     background-color:rgba(237, 237, 237, 0.5);
 }
 
+@media (max-width:500px){
+    .header{
+        height: 100px;
+        justify-content: center;
+    }
+}
+
 .size{
     height: 700px;
     width: 100%;
+}
+
+@media (max-width:500px){
+    .size{
+        height: 550px;
+    }
 }
 
 /* .aboutus{
@@ -129,7 +176,11 @@ p{
     gap: 3px;
 }
 
-
+@media (max-width:500px){
+    .list{
+        font-size: 16px;
+    }
+}
 
 .services {
     text-align: center;
@@ -163,6 +214,7 @@ p{
     background-position: center;
     position: relative;
     display: flex;
+    justify-content: center;
 }
 
 .p, .des{
@@ -198,8 +250,9 @@ p{
     display: inline-block;
     padding: 150px;
     text-align: center;
-    font-size: 40px;
-} 
+    /* font-size: 40px; */
+}
+
 
 
 /* .img:hover .des{
@@ -215,6 +268,14 @@ p{
 
 .title{
     color: white;
+    font-size: 40px;
+}
+
+@media (max-width:800px){
+    .title{
+        display: inline-block;
+        font-size: 25px;
+    }
 }
 
 .title:hover{
@@ -342,6 +403,12 @@ p{
     object-fit: cover;
 }
 
+@media (max-width:500px){
+    .headerimage{
+        height: fit-content;
+    }
+}
+
 .listcon{
     line-height: 35px;
     list-style-type: none;
@@ -356,6 +423,8 @@ p{
 .contactus{
     /* height: 350px; */
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
     align-items: center;
     padding: 20px;
     justify-content: space-around;
@@ -400,6 +469,12 @@ input:hover{
 
 .con1{
     font-size: 50px;
+}
+
+@media (max-width:500px){
+    .con1{
+        font-size: 30px;
+    }
 }
 
 .wrapfrom{
@@ -466,7 +541,9 @@ li:hover{
 
 .servicelistwrap{
     display: flex;
-    gap: 80px;
+    flex-wrap: wrap;
+    column-gap: 80px;
+    row-gap: 20px;
     align-content: center;
     align-items: center;
     justify-content: center;
@@ -478,8 +555,20 @@ li:hover{
     font-size: 20px;
 }
 
+@media (max-width:500px){
+    .asfsrd{
+        font-size: 16px;
+    }
+}
+
 .aersd{
     font-size: 25px;
+}
+
+@media (max-width:500px){
+    .aersd{
+        font-size: 20px;
+    }
 }
 
 .designcontainer3{
@@ -489,10 +578,12 @@ li:hover{
 
 .servicelistwrap2{
     display: flex;
-    gap: 10px;
-    align-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+    /* align-content: center;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
 .flexdesign{
